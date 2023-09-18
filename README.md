@@ -1,10 +1,14 @@
 # simple-docker-example
 
 The docker image is defined in the Dockerfile. See comments in the Dockerfile for more information.
-# Build the docker image - the image name is "simple-python-app", the . means that it will look for the Dockerfile in the current directory
+
+## Build the docker image
+
+the image name is "simple-python-app", the . means that it will look for the Dockerfile in the current directory
+
 `docker build -t simple-python-app .`
 
-# Run the docker container:
+## Run the docker container
 * mount - mount a local directory to the container. in this case the local directory is /Users/<my-user-name>/storage and the container directory is /storage
   * https://towardsai.net/p/l/a-guide-to-persistent-storage-in-docker
   * https://docs.docker.com/storage/bind-mounts/
